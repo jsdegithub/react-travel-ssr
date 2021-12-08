@@ -1,5 +1,5 @@
 ### 基于Nextjs重构的react-travel项目
-([react-travel项目请点击此链接查看](https://github.com/jsdegithub/react-travel))，从CSR客户端渲染重构为SSR服务端渲染，加快了首屏渲染速度。
+[react-travel项目请点击此链接查看](https://github.com/jsdegithub/react-travel)，从CSR客户端渲染重构为SSR服务端渲染，加快了首屏渲染速度。
 
 ### 项目演示：[点击链接查看项目演示](http://8.217.9.69:3000/)（不要使用代理访问网站，否则会被拦截）
 
