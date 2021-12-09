@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 项目演示：[点击链接查看项目演示](http://8.217.9.69:3000/)（不要使用代理，否则网站将无法正常访问）
 
-## Getting Started
+这是基于 Nextjs 重构的 react-travel SSR 项目，从 CSR 客户端渲染重构为 SSR 服务端渲染，大大加快了首屏渲染速度（[react-travel客户端渲染项目请点击此链接查看](https://github.com/jsdegithub/react-travel)）；
 
-First, run the development server:
+经测试，白屏时间仅有0.4s，首屏加载时间2.8s。
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 技术栈： Nextjs+React+Hooks+Antd+Redux+React-redux+ReduxToolkit
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 部署方案：Docker+阿里云ECS+阿里云容器镜像服务
+编写 Dockerfile 制作镜像，推送到阿里云镜像仓库，再从ECS服务器拉取镜像。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### 性能报告：
+First Contentful Paint => 0.4s
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Time to Interactive => 1.2s
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Speed Index => 2.5s
 
-## Learn More
+Total Blocking Time => 30ms
 
-To learn more about Next.js, take a look at the following resources:
+Largest Contentful Paint => 3.4s
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cumulative Layout Shift => 0.006
