@@ -1,6 +1,5 @@
 const next = require("next");
 const express = require("express");
-// const proxyMiddleware = require("http-proxy-middleware");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const devProxy = {

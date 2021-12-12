@@ -1,9 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/package-lock.json
-
 /docker_file
 /nginx_config
+/ssl_certificate
 
 # dependencies
 /node_modules

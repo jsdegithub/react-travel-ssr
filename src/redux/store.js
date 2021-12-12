@@ -13,7 +13,7 @@ import { productDetailSlice } from "./reducer/productDetail/slice";
 import { placeOrderReducer } from "./reducer/placeOrder/reducer";
 import { searchProductSlice } from "./reducer/searchProduct/slice";
 
-import { changeLanguage } from "./middleware/changeLanguage";
+import { changeLanguage } from "../middleware/changeLanguage";
 
 const rootReducer = combineReducers({
   language: languageReducer,
