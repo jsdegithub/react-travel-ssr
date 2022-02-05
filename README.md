@@ -14,7 +14,7 @@ First Contentful Paint => 0.4s
 
 Time to Interactive => 1.2s
 
-Speed Index => 2.5s
+Speed Index => 2.5
 
 Total Blocking Time => 30ms
 
