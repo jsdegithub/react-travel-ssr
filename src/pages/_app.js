@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getShoppingCartProductListActionCreator } from "../redux/reducer/shoppingCart/reducer";
 
-axios.defaults.headers["x-icode"] = "46A0A6ADED08D5A9";
+axios.defaults.headers["x-icode"] = "1F73EF0C3E222D6D";
 // axios.defaults.baseURL = "/api";
 
 const MiddleWrapper = ({ children }) => {
