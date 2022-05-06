@@ -21,3 +21,4 @@ Total Blocking Time => 30ms
 Largest Contentful Paint => 2.3s
 
 Cumulative Layout Shift => 0.006
+
